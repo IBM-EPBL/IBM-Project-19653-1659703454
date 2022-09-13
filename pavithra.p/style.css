@@ -1,0 +1,14 @@
+.cover {
+    border-radius: 10px;
+  }
+  
+  /* for image*/
+  
+  .pic {
+    max-width: 216px;
+    max-height: 216px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
