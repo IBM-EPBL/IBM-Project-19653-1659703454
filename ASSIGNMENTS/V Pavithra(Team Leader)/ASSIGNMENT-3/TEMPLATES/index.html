@@ -1,0 +1,34 @@
+<a href="/">HOME</a>
+<a href="/uploader">Upload</a>
+<a href="/deletefile">Delete</a>
+<br><hr>
+<h1>IBM Object Storage</h1>
+
+
+<!doctype html>
+<html>
+   <head>
+      <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+   </head>
+   <body>
+      {% for row in files %}
+      <div style="border: 1px solid #EFEFEF;margin:10px;">
+         <h3>Filename : {{row}} </h3>
+         <img src="https://flask000.s3.jp-tok.cloud-object-storage.appdomain.cloud/{{row}}" width="150px"></td>
+      </div>
+   {% endfor %}
+   <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "11e3c6bf-19d1-4d9f-9d1f-47bbe32c3f4e", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "23c2373a-c6f9-4b2d-82df-fcecf8c0abc9", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>AQ
+   </body>
+</html>
