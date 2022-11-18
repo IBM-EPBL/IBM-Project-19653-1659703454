@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Assistant Application</title>
+
+    <!-- BOOTSTRAPS CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- OPTIONAL JAVASCRIPT -->
+    <!-- JQUERY FIRST,THEN POPPER.JS,THEN BOOTSTRAP JS -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src=https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <style>
+        .gradient-custom {
+            /* fallback for old browsers */
+            background: url('/static/images/nutri2.jpg');
+            /* Full height */
+            height: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100 gradient-custom ">
+        <div class="container py-5  h-100" >
+            <div class="row d-flex justify-content-left align-items-left h-100">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                    <div class="card bg-transparent rounded border border-warning text-black" style="border-radius: 1rem;">
+                        <div class="card-body  p-5 text-center">
+                            <h1 class="fw-bold mb-2 text-uppercase">Register here</h1>
+
+                            <form action="" method="post" class="form-group">
+                                <div class="form-group">
+                                    <label for="username" class="text-dark">Name:</label>
+                                    <input type="text" name="username" placeholder=" enter your name" id=""
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="text-dark">Email:</label>
+                                    <input type="email" name="useremail" placeholder=" enter your email" id=""
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone number" class="text-dark">phone no:</label>
+                                    <input type="tel" name="userphoneno" placeholder=" enter your phone number" id=""
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="text-dark">password:</label>
+                                    <input type="password" name="password" placeholder="enter password" id=""
+                                        class="form-control" required>
+                                </div>&nbsp;
+
+                                <input type="submit" name="submit_btn" id="register" class="btn btn-dark btn-md"
+                                    value="sign up">&nbsp;&nbsp;
+                                <div id="register-link" class="text-right ml-2 p-1">
+                                    Already have an account? &nbsp; <a href="/login" > sign in<span>&#128100;</span></a>
+                                </div>
+
+                            </form>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
