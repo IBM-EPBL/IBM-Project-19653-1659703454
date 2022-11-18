@@ -1,6 +1,6 @@
 # Nutrition Assistant Application
 # Category: Cloud Application Development
-Tools :
+# Tools :
   IBM Cloud 
   IBM Cloud Object Storage
   Kubernetes 
@@ -12,39 +12,39 @@ Tools :
   IBM DB2 
   IBM Container Registry
 
-Team ID : PNT2022TMID36412
-Batch No: B2-2M4E
+# Team ID : PNT2022TMID36412
+# Batch No: B2-2M4E
 
-Team members :
+# Team members :
       SWETHA KUMARI.S 
       PAVITHRA.V
       SUBASHINI.B
       PAVITHRA.P
       MAHALAKSHMI.S
       
-Checklist:
+# Checklist:
 
-  Ideation Phase
+ # Ideation Phase
     Literature Survey
     Empathy Map
     Brainstorm & Ideation
  
-  Project Design Phase - I
+ # Project Design Phase - I
     Proposed Solution
     Problem Solution Fit
     Solution Architecture
   
-  Project Design Phase - II
+ # Project Design Phase - II
     Customer Journey
     Functional Requirements
     Data Flow Daigrams
     Technology Architecture
     
-  Project Planning Phase
+ # Project Planning Phase
     Milestone & Activity List
     Sprint Delivery Plan
     
-  Setting Up of Environment
+ # Setting Up of Environment
     Create Flask Project
     Create IBM Cloud Account
     Install IBM Cloud CLI
@@ -52,7 +52,7 @@ Checklist:
     Create an Account in SendGrid
     Create an Account in Nutrition API
   
-  Project Development Phase
+ # Project Development Phase
     Sprint 1
     Sprint 2
     Sprint 3
