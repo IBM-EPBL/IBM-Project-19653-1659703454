@@ -1,0 +1,93 @@
+#navbar {
+    background-color: #f3b354;
+    padding-right: 5px;
+
+}
+
+#navbar img {
+    height: 80px !important;
+    width: 100px;
+}
+
+#navbarcon {
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+#caro
+{
+    height: 300px !important;
+    width: 900px !important;
+} 
+.btn {
+    background-color: #f3b354;
+
+}
+.btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/*#carous 
+{
+   background-color: #f8d167;
+}*/
+
+.bg-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/static/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+
+/* services */
+ #serv
+ {
+    background: url('/static/images/caro.jpg');
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ 
+.card
+    {
+        cursor: pointer;
+        
+        padding: 2px;
+    }
+.hd
+{
+    font-size: 25px;
+    font-weight: 550;
+}
+#title
+{
+    color: #f3b354;
+    font-size: 30px;
+    font-weight: 500;
+}
+.card.hover, .card:hover
+{
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}
+
+
+button.focus, button:focus
+{
+    outline: 0;box-shadow: none !important
+}
+.containers
+{
+    background: url('/static/images/bgu.jpg');
+    height: 100% ;
+     width: auto ;
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
