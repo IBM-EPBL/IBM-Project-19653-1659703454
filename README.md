@@ -57,3 +57,8 @@
     Sprint 2
     Sprint 3
     Sprint 4
+    
+ # Final Deliverables
+    Project documentation
+    project demo link
+      
