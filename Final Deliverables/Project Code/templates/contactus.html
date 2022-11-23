@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Assistant Application</title>
+
+    <!-- BOOTSTRAPS CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- OPTIONAL JAVASCRIPT -->
+    <!-- JQUERY FIRST,THEN POPPER.JS,THEN BOOTSTRAP JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background: url('/static/images/bgu.jpg');
+    height: 100% ;
+     width: auto ;
+      /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        label {
+            color: #333;
+        }
+
+        .btn-send {
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            width: 80%;
+            margin-left: 3px;
+        }
+
+        .help-block.with-errors {
+            color: #ff5050;
+            margin-top: 5px;
+
+        }
+
+        .card {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=" navbar navbar-expand-md  navbar-light  " id="navbar">
+        <a href="#" class="navbar-brand ">
+            <img src="/static/images/logo..jpg" alt="">
+            <a class="navbar-brand text-light text-uppercase">Nutrition Assistant Application</a>
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle='collapse' data-target="#navbarcon">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+
+        <div id="navbarcon" class="navbar-collapse collapse">
+
+
+            <ul class="navbar-nav mx-auto ">
+
+                <li class="nav-item"><a href="/index" class="text-dark font-weight-bold nav-link active">Home</a>
+                </li>&nbsp;&nbsp;
+                <li class="nav-item"><a href="/uploadimage" class=" text-dark font-weight-bold nav-link">Upload
+                        Image</a>
+                </li>&nbsp;&nbsp;&nbsp;
+                <li class="nav-item"><a href="/contactus" class=" text-dark font-weight-bold nav-link">View Your
+                        History</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item  mx-auto "><a href="#" class="btn btn-dark active" role="button"
+                        aria-pressed="true"><span class="fa fa-power-off"></span>Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="container">]
+        <div class="row ">
+            <div class="col-lg-7 mx-auto">
+                <div class="card mt-2 mx-auto p-4 bg-light">
+                    <div class="card-body bg-light">
+                        <h1 class="text-dark text-mx">CONTACT US</h1>
+                        <div class="container">
+                            <form action="{{url_for('send')}}" autocomplete="off" method="POST">
+
+
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+
+                                            <div class="form-group">
+                                               
+                                                <label for="form_name">Name *</label>
+                                                <input id="form_name" type="text" name="name" class="form-control"
+                                                    placeholder="Please enter your name *" required="required"
+                                                    data-error="Name is required.">
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="form_email">Email *</label>
+                                                    <input id="form_email" type="email" name="email"
+                                                        class="form-control" placeholder="Please enter your email *"
+                                                        required="required" data-error="Valid email is required.">
+
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="form_message">Subject</label>
+                                                <input type="text" name="subject" class="input" >
+                                                
+                                                
+                                              </div>
+
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <label for="form_message">Message *</label>
+                                                        <textarea id="form_message" name="message" class="form-control"
+                                                            placeholder="Write your message here." rows="4"
+                                                            required="required"
+                                                            data-error="Please, leave us a message."></textarea>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="col-md-12">
+
+                                                    <input type="submit" class="btn btn-success btn-send  pt-2 btn-block
+                            " value="Send">
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- /.8 -->
+
+            </div>
+            <!-- /.row-->
+
+        </div> 
+        <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(245, 180, 82, 0.829);">
+                © 2022 Copyright:
+                <a class="text-dark font-weight-bold" href="#">Nutri@SKMPSP</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    
+ 
+
+ 
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

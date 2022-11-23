@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- REQUIRED META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Assistant Application</title>
+
+    <!-- BOOTSTRAPS CSS  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- OPTIONAL JAVASCRIPT -->
+    <!-- JQUERY FIRST,THEN POPPER.JS,THEN BOOTSTRAP JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class=" navbar navbar-expand-md  navbar-light  " id="navbar">
+        <a href="#" class="navbar-brand ">
+            <img src="/static/images/logo..jpg" alt="">
+            <a class="navbar-brand text-light text-uppercase">Nutrition Assistant Application</a>
+        </a>
+
+        <button type="button" class="navbar-toggler" data-toggle='collapse' data-target="#navbarcon">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+
+        <div id="navbarcon" class="navbar-collapse collapse">
+
+
+            <ul class="navbar-nav mx-auto ">
+
+                <li class="nav-item"><a href="/index" class="text-dark font-weight-bold nav-link active">Home</a>
+                </li>&nbsp;&nbsp;
+                <li class="nav-item"><a href="/uploadimage" class=" text-dark font-weight-bold nav-link">Upload Image</a>
+                </li>&nbsp;&nbsp;&nbsp;
+                
+                <li class="nav-item"><a href="/contactus" class=" text-dark font-weight-bold nav-link"> Contact us</a></li>
+                &nbsp;&nbsp;
+                
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item  mx-auto "><a href="#" class="btn btn-dark active" role="button"
+                        aria-pressed="true"><span class="fa fa-power-off"></span>Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container-fluid p-2 bg-overlay">
+        <div class="row align-text-center">
+            <div class="col-md text-center p-2">
+            <h1 class='text-success'>Welcome!</h1><br>
+            <h2 class = "text-light">Always eat That's  right to your Health.</h2><br>
+            <h3><strong>Your diet is a bank account. Good food choices are good investments.”</strong></h3><br>
+            <h4> “When diet is wrong, medicine is of no use. When diet is correct, medicine is of no need.”</h4><br>
+            <a href="C:\Users\sweatha\Desktop\IBM-PROJECT\templates\uploadimage.html">
+                <button class="btn">Lets Calculate!</button>
+            </a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="container-fluid p-2" id="carous">
+        <div class="row align-items-center">
+            <div class="col-auto">
+                <a class="h1" href="#carouselControls" role="button" data-slide="prev">
+                    <span>&lt;</span>
+                </a>
+            </div>
+            <div class="col">
+                <div id="carouselControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row align-items-center">
+                                <div class="col-md text-center p-2">
+                                    <h1>IMPORTANT FACTS!</h1>
+                                    <p class="text-dark font-weight-bold"> This is what people don't understand: obesity
+                                        is a symptom of poverty. It's not a lifestyle choice where people are just
+                                        eating and not exercising. It's because kids - and this is the problem with
+                                        school lunch right now - are getting sugar, fat, empty calories - lots of
+                                        calories - but no nutrition.The lack of access to proper nutrition is not only
+                                        fueling obesity, it is leading to food insecurity and hunger among our
+                                        children.So,Calculate the nutritional value of food you intake .</p>
+                                    <a href="C:\Users\sweatha\Desktop\IBM-PROJECT\templates\uploadimage.html">
+                                        <button class="btn">Check Your Food Nutri Here!</button>
+                                    </a>
+
+                                </div>
+                                <div class="col-md p-2">
+                                    <img class="d-block  img-fluid" id="caro"
+                                        src='\static\images\caro3.jpg'
+                                        alt="First slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col text-center">
+                                    <h1>IMPORTANT FACTS!</h1>
+                                    <p class="text-dark font-weight-bold"> A Personal Nutrition Assistant To Help With
+                                        Your Diet Plans.Adopting a new healthier lifestyle can involve changing diet to
+                                        include more fresh fruit and vegetables as well as increasing levels of
+                                        exercise. You feel better when you're eating food that retains nutritional
+                                        value.“Eating healthy nutritious food is the simple and the right solution to
+                                        get rid of excess bodyweight effortlessly and become slim and healthy forever.
+                                    </p>
+                                    <a href="C:\Users\sweatha\Desktop\IBM-PROJECT\templates\uploadimage.html">
+                                        <button class="btn">Check Your Food Nutri Here!</button>
+                                    </a>
+                                </div>
+                                <div class="col-md p-2">
+                                    <img class="d-block  img-fluid" id="caro"
+                                        src='\static\images\caro2.jpg'
+                                        alt="2nd slide">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row align-items-center">
+                                <div class="col text-center">
+                                    <h1>IMPORTANT FACTS!</h1>
+                                    <p class="text-dark font-weight-bold"> Developing a diet that is healthful,
+                                        balanced, and appropriate for your particular caloric needs is easy enough and
+                                        is absolutely critical to establishing a healthful lifestyle that incorporates
+                                        proper nutrition, adequate fitness, and mental resilience.A 'diet' is simply an
+                                        individual's eating regimen: it doesn't have to mean the restrictive plan we've
+                                        come to associate this word with.Your diet is a bank account. Good food choices
+                                        are good investments. </p>
+                                    <a href="C:\Users\sweatha\Desktop\IBM-PROJECT\templates\uploadimage.html">
+                                        <button class="btn">Check Your Food Nutri Here!</button>
+                                    </a>
+                                </div>
+                                <div class="col-md p-2">
+                                    <img class="d-block  img-fluid" id="caro"
+                                        src='\static\images\caro1.jpg'
+                                        alt="3rd slide">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto">
+                <a class="h1" href="#carouselControls" role="button" data-slide="next">
+                    <span>&gt;</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+<!--SECTION PART-->
+
+<div class='container-fluid mx-auto mt-5 mb-5 col-12' style="text-align: center" id="serv">
+    <div class="hd">EAT GOOD AND FEEL GOOD TO BELEIVE US</div>
+    <p><small class="text-muted">Always render more and better service than <br />is expected of you, no matter what your ask may be.</small></p>
+    <div class="row" style="justify-content: center">
+        <div class="card bg-transparent col-md-3 col-12">
+            <div class="card-content">
+                <div class="card-body"> <img class="img-fluid" src='\static\images\diet.jpg' />
+                    <div class="shadow"></div>
+                    <div class="card-title" id="title"> Maintain Diet </div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-dark font-weight-bold">A 'diet' is simply an
+                            individual's eating regimen: it doesn't have to mean the restrictive plan we've
+                            come to associate this word with.Your diet is a bank account. Good food choices
+                            are good investments.</small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-transparent col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img-fluid" src='\static\images\calo.png' />
+                    <div class="card-title " id="title">Calculate Calorie</div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-dark font-weight-bold">Due to the ignorance of healthy food habits, obesity rates are increasing at an alarming
+                            speed, and this is reflective of the risks to people's health. People need to control their
+                            daily calorie intake by eating healthier foods, which is the most basic method to avoid
+                            obesity.</small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-transparent col-md-3 col-12 ml-2">
+            <div class="card-content">
+                <div class="card-body"> <img class="img-fluid" src='\static\images\health.jpg' />
+                    <div class="card-title  " id="title">Provide Healthy Lifestyle</div>
+                    <div class="card-subtitle">
+                        <p> <small class="text-dark font-weight-bold">It can analyze real-time images of a meal and analyze it for nutritional content which can
+                            be very handy and improves the dietary habits, and therefore, helps in maintaining a healthy
+                            lifestyle.</small> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+    <!--FOOTER SECTION-->
+
+    <footer class="bg-dark text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(245, 180, 82, 0.829);">
+            © 2022 Copyright:
+            <a class="text-dark font-weight-bold" href="#">Nutri@SKMPSP</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+<!--chatbot-->
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "cfa81aa3-1aaa-4d2a-ab32-9ecc011e6ecd", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "06be8e17-7f29-4089-abfc-211c6cbd5d2e", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
